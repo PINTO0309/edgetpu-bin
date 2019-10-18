@@ -1,5 +1,9 @@
 # edgetpu-bin
 
+**[Warning] As of October 19, 2019, the operation is unstable.**  
+  
+  
+  
 ## 1. Reference articles
 **https://github.com/google-coral/edgetpu#build-and-install-from-source**
 
