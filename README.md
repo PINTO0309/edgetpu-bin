@@ -33,5 +33,5 @@ $ make wheel
 The wheel file is generated in the following path.  
 **`~/edgetpu/dist/edgetpu-2.12.1-py3-none-any.whl`**  
   
-[001](media/001.png)  
-[002](media/002.png)  
+![001](media/001.png)  
+![002](media/002.png)  
