@@ -5,7 +5,7 @@
 
 ## 2. Environment
 
-- Ubuntu 18.04
+- Ubuntu 18.04 x86_64
 
 ## 3. Procedure
 
