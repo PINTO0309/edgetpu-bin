@@ -1,6 +1,13 @@
 # edgetpu-bin
 
+## 1. Reference articles
 **https://github.com/google-coral/edgetpu#build-and-install-from-source**
+
+## 2. Environment
+
+- Ubuntu 18.04
+
+## 3. Procedure
 
 ```bash
 $ cd ~
