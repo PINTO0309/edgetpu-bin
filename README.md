@@ -43,7 +43,17 @@ $ sudo pip3 install edgetpu-2.12.1-py3-none-any.whl
 $ sudo sh -c "echo 'SUBSYSTEM==\"usb\", ATTR{idVendor}==\"0525\", MODE=\"0664\", \
 GROUP=\"plugdev\", TAG+=\"uaccess\"' >> /etc/udev/rules.d/65-android-local.rules"
 $ sudo udevadm control --reload-rules && udevadm trigger
+```
 
+## 5. Operation check
+
+```bash
 $ git clone https://github.com/google-coral/tflite.git
-$ cd tflite
+$ cd tflite/python/examples/classification
+$ bash install_requirements.sh
+
+$ python3 classify_image.py \
+--model models/mobilenet_v2_1.0_224_inat_bird_quant_edgetpu.tflite \
+--labels models/inat_bird_labels.txt \
+--input images/parrot.jpg
 ```
