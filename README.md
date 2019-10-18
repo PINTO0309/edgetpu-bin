@@ -36,3 +36,10 @@ The wheel file is generated in the following path.
 ![001](media/001.png)  
 ![002](media/002.png)  
 
+```bash
+$ sudo pip3 install edgetpu-2.12.1-py3-none-any.whl
+$ sudo sh -c "echo 'SUBSYSTEM==\"usb\", ATTR{idVendor}==\"0525\", MODE=\"0664\", \
+GROUP=\"plugdev\", TAG+=\"uaccess\"' >> /etc/udev/rules.d/65-android-local.rules"
+
+$ sudo udevadm control --reload-rules && udevadm trigger
+```
